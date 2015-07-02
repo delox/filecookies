@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="br.com.sankhya.cordova.thirdpartycookies"
-        version="1.0.0">
+        version="1.0.1">
 
     <name>Third Party Cookies Plugin</name>
 
