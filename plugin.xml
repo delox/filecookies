@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="br.com.sankhya.cordova.thirdpartycookies"
-        version="1.0.1">
+        id="com.delox.filecookies"
+        version="0.0.1">
 
-    <name>Third Party Cookies Plugin</name>
+    <name>Enable file cookies</name>
 
     <description>
-        Esse plugin corrige o BUG de cookies no Android >= 21. As novas versões do Android desabilitam o uso de cookies no webview. Issue https://issues.apache.org/jira/browse/CB-8026.
+        This plugin is intended to overcome android's 21 API level limitation on session cookies storage.
     </description>
 
     <license>Apache 2.0</license>
@@ -20,13 +20,13 @@
     <platform name="android">
         
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="ThirdPartyCookiesPlugin" >
-                <param name="android-package" value="br.com.sankhya.cordova.thirdpartycookies.ThirdPartyCookiesPlugin"/>
+            <feature name="FileCookiesPlugin" >
+                <param name="android-package" value="com.delox.filecookies.FileCookiesPlugin"/>
                 <param name="onload" value="true" />
             </feature>
         </config-file>
         
-        <source-file src="src/android/ThirdPartyCookiesPlugin.java" target-dir="src/br/com/sankhya/cordova/thirdpartycookies" />
+        <source-file src="src/android/FileCookiesPlugin.java" target-dir="src/com/delox/filecookies" />
         
     </platform>
 	
